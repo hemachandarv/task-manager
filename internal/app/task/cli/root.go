@@ -9,8 +9,7 @@ var rootCmd = &cobra.Command{
 	Short: "task is a CLI for managing your TODOs.",
 }
 
-// Execute is the entry point for cli
-// to start engaging with the user.
+// Execute is the entry point for cli to start engaging with the user.
 // It will initialise all sub-commands.
 func Execute() error {
 	err := rootCmd.Execute()
