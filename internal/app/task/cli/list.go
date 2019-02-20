@@ -34,13 +34,3 @@ func list(cmd *cobra.Command, args []string) {
 		fmt.Printf("%d. %s\n", i+1, task.Data)
 	}
 }
-
-func pendingTasks(tasks []db.Task) []db.Task {
-	var res []db.Task
-	for _, task := range tasks {
-		if task.Status == db.PendingStatus {
-			res = append(res, task)
-		}
-	}
-	return res
-}
